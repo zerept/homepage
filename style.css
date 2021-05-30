@@ -25,8 +25,13 @@ table{
 th, td {
     border: 4px solid #363535;
     text-align: center;
-    text-valign: center;
+    vertical-align: center;
     background-color:gray;
+}
+td {
+    width: 150px;
+    height: 150px;
+    vertical-align: center;
 }
 
 a:link, a:visited, a:active {
@@ -57,6 +62,10 @@ input, textarea {
 #cor_profissional:hover{
     background-color: #e0dcdc;
 }
+#tit_profissional{
+    position: relative;
+    top: 30px;
+}
 #cor_interno{
     width: 100%;
     height: 100%;
@@ -64,10 +73,18 @@ input, textarea {
 #cor_interno:hover{
     background-color: #e0dcdc;
 }
+#tit_interno{
+    position: relative;
+    top: 30px;
+}
 #cor_pessoal{
     width: 100%;
     height: 100%;
 }
 #cor_pessoal:hover{
     background-color: #e0dcdc;
+}
+#tit_pessoal{
+    position: relative;
+    top: 30px;
 }

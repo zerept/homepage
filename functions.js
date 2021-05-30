@@ -27,22 +27,22 @@ function lista(valor){
                 if (valor === "pessoal") {
                     texto += "<td>" +
                         "<a href='" + myArr.pessoal[i].lnk + "' target='_blank'><div id='cor_pessoal'>" +
-                        "<img width='60px' height='60px' src='" + myArr.pessoal[i].ico + "' alt=''>" +
-                        "<br><br>" + myArr.pessoal[i].tit.toUpperCase() +
-                    "</div></a></td>"
+                        "<br><img width='60px' height='60px' src='" + myArr.pessoal[i].ico + "' alt=''>" +
+                        "<div id='tit_pessoal'>" + myArr.pessoal[i].tit.toUpperCase() +
+                    "</div></div></a></td>"
                 } else if (valor === "profissional") {
                     texto += "<td>" +
                         "<a href='" + myArr.profissional[i].lnk + "' target='_blank'><div id='cor_profissional'>" +
-                        "<img width='60px' height='60px' src='" + myArr.profissional[i].ico + "' alt=''>" +
-                        "<br><br>" + myArr.profissional[i].tit.toUpperCase() +
-                    "</div></a></td>"
+                        "<br><img width='60px' height='60px' src='" + myArr.profissional[i].ico + "' alt=''>" +
+                        "<div id='tit_profissional'>" + myArr.profissional[i].tit.toUpperCase() +
+                    "</div></div></a></td>"
                 }
                 else {
                     texto += "<td>" +
                         "<a href='" + myArr.interno[i].lnk + "' target='_blank'><div id='cor_interno'>" +
-                        "<img width='60px' height='60px' src='" + myArr.interno[i].ico + "' alt=''>" +
-                        "<br><br>" + myArr.interno[i].tit.toUpperCase() +
-                        "</div></a></td>"
+                        "<br><img width='60px' height='60px' src='" + myArr.interno[i].ico + "' alt=''>" +
+                        "<div id='tit_interno'>" + myArr.interno[i].tit.toUpperCase() +
+                        "</div></div></a></td>"
                 }
                 if (count === 6) {
                     texto += "</tr><tr>";
