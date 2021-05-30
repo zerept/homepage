@@ -3,18 +3,25 @@ html {
   background-color: #1d1d1d;
 }
 body {
+
+}
+#pagina{
+    position: relative;
     width: 60%;
     margin: 0 auto;
-    background-color: #e0dcdc;
-    padding: 0 20px 20px 20px;
-    border: 5px solid #1d1d1d;
-    border-radius: 30px;
-    color: #1d1d1d;
 }
 p {
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
     color: #1d1d1d;
+    font-size: 14px;
+}
+#ass {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: #1d1d1d;
+    font-size: 10px;
+    text-align: right;
 }
 table {
     border-collapse: collapse;
@@ -87,4 +94,46 @@ input, textarea {
 #tit_pessoal{
     position: relative;
     top: 30px;
+}
+#cor_estudo{
+    width: 100%;
+    height: 100%;
+}
+#cor_estudo:hover{
+    background-color: #e0dcdc;
+}
+#tit_estudo{
+    position: relative;
+    top: 30px;
+}
+#topo{
+    position: fixed;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #e0dcdc;
+    padding: 0 20px 20px 20px;
+    border: 5px solid #1d1d1d;
+    border-radius: 30px;
+    color: #1d1d1d;
+    z-index: 3;
+}
+#topo_preto{
+    position: fixed;
+    top: -20px;
+    height: 80px;
+    width: 100%;
+    background-color: #1d1d1d;
+    z-index: 2;
+}
+#conteudo{
+    position: absolute;
+    width: 100%;
+    top: 340px;
+    margin: 0 auto;
+    background-color: #e0dcdc;
+    padding: 0 30px 20px 20px;
+    border: 5px solid #1d1d1d;
+    border-radius: 30px;
+    color: #1d1d1d;
+    z-index: 1;
 }

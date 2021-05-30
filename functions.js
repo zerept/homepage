@@ -18,8 +18,11 @@ function lista(valor){
             else if (valor === "profissional") {
                 itens = Object.keys(myArr.profissional).length;
             }
-            else {
+            else if (valor === "interno") {
                 itens = Object.keys(myArr.interno).length;
+            }
+            else {
+                itens = Object.keys(myArr.estudo).length;
             }
             var count = 0;
             for (var i = 0; i < itens; i++) {
@@ -37,11 +40,18 @@ function lista(valor){
                         "<div id='tit_profissional'>" + myArr.profissional[i].tit.toUpperCase() +
                     "</div></div></a></td>"
                 }
-                else {
+                else if (valor === "interno"){
                     texto += "<td>" +
                         "<a href='" + myArr.interno[i].lnk + "' target='_blank'><div id='cor_interno'>" +
                         "<br><img width='60px' height='60px' src='" + myArr.interno[i].ico + "' alt=''>" +
                         "<div id='tit_interno'>" + myArr.interno[i].tit.toUpperCase() +
+                        "</div></div></a></td>"
+                }
+            else {
+                    texto += "<td>" +
+                        "<a href='" + myArr.estudo[i].lnk + "' target='_blank'><div id='cor_estudo'>" +
+                        "<br><img width='60px' height='60px' src='" + myArr.estudo[i].ico + "' alt=''>" +
+                        "<div id='tit_estudo'>" + myArr.estudo[i].tit.toUpperCase() +
                         "</div></div></a></td>"
                 }
                 if (count === 6) {
@@ -55,9 +65,12 @@ function lista(valor){
             } else if (valor === "profissional") {
                 document.getElementById("profissional").innerHTML = texto;
             }
-            else {
+            else if (valor === "interno"){
                 document.getElementById("interno").innerHTML = texto;
                 }
+            else {
+                document.getElementById("estudo").innerHTML = texto;
+            }
         }
     };
     xmlhttp.open("GET", "links.json", true);
