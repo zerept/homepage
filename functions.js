@@ -25,24 +25,24 @@ function lista(valor){
             for (var i = 0; i < itens; i++) {
                 count++
                 if (valor === "pessoal") {
-                    texto += "<td id='cor_pessoal' >" +
-                        "<a href='" + myArr.pessoal[i].lnk + "' target='_blank'>" +
+                    texto += "<td>" +
+                        "<a href='" + myArr.pessoal[i].lnk + "' target='_blank'><div id='cor_pessoal'>" +
                         "<img width='60px' height='60px' src='" + myArr.pessoal[i].ico + "' alt=''>" +
                         "<br><br>" + myArr.pessoal[i].tit.toUpperCase() +
-                    "</a></td>"
+                    "</div></a></td>"
                 } else if (valor === "profissional") {
-                    texto += "<td id='cor_profissional' >" +
-                        "<a href='" + myArr.profissional[i].lnk + "' target='_blank'>" +
+                    texto += "<td>" +
+                        "<a href='" + myArr.profissional[i].lnk + "' target='_blank'><div id='cor_profissional'>" +
                         "<img width='60px' height='60px' src='" + myArr.profissional[i].ico + "' alt=''>" +
                         "<br><br>" + myArr.profissional[i].tit.toUpperCase() +
-                    "</a></td>"
+                    "</div></a></td>"
                 }
                 else {
-                    texto += "<td id='cor_interno' >" +
-                        "<a href='" + myArr.interno[i].lnk + "' target='_blank'>" +
+                    texto += "<td>" +
+                        "<a href='" + myArr.interno[i].lnk + "' target='_blank'><div id='cor_interno'>" +
                         "<img width='60px' height='60px' src='" + myArr.interno[i].ico + "' alt=''>" +
                         "<br><br>" + myArr.interno[i].tit.toUpperCase() +
-                        "</a></td>"
+                        "</div></a></td>"
                 }
                 if (count === 6) {
                     texto += "</tr><tr>";
@@ -81,14 +81,4 @@ function verEnter(val1,val2){
         document.getElementById("tradutor").submit();
     }
 }
-function muda(valor){
-    alert(valor)
-    if (valor === "pessoal") {
-        document.getElementById("cor_pessoal").style.color = "#cccccc";
-    } else if (valor === "profissional") {
-        document.getElementById("cor_profissional").style.color = "#cccccc";
-    }
-    else {
-        document.getElementById("cor_interno").style.color = "#cccccc";
-    }
-}
+
