@@ -1,7 +1,3 @@
-dayName = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"]
-monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro"]
-now = new Date
-
 function lista(valor){
     var xmlhttp = new XMLHttpRequest();
 
@@ -110,6 +106,9 @@ function zero(x) {
 }
 
 function data(){
-    let varData = dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear ();
+    let dayName = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"]
+    let monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro"]
+    let agora = new Date
+    let varData = dayName[agora.getDay() ] + ", " + agora.getDate () + " de " + monName [agora.getMonth() ]   +  " de "  +     agora.getFullYear ();
     document.getElementById('dat').textContent = varData;
 }
