@@ -94,6 +94,7 @@ function relogio(){
         let hora = novaHora.getHours();
         let minuto = novaHora.getMinutes();
         let segundo = novaHora.getSeconds();
+        hora = zero(hora);
         minuto = zero(minuto);
         segundo = zero(segundo);
         document.getElementById('rel').textContent = hora+':'+minuto+':'+segundo;
