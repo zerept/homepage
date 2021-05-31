@@ -2,51 +2,29 @@
 <html lang="pt-br">
     <head>
         <title>Home Page</title>
-        <meta charset="utf-8" />
-        <script type="text/javascript" src="functions.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <meta charset='utf-8' />
+        <script type='text/javascript' src='inc/functions.js'></script>
+        <script type='text/javascript' src='inc/exe.js'></script>
+        <span id="head"></span>
     </head>
     <body>
-    <div id="topo_preto"></div>
         <div id="pagina">
             <div id="topo">
                 <br><hr>
                 <table>
                     <tr>
-                        <td>
-                            <p>
-                                <span id="rel"></span>
-                            </p>
-                            <p>
-                                <span id="dat"></span>
-                            </p>
+                        <td id="datahora">
+                            <p><span id="rel"></span></p>
+                            <p><span id="dat"></span></p>
                         </td>
-                        <td>
-                            <form action="https://www.google.com/search" method="get" target="_blank"  >
-                                <label>
-                                    <input name="q" type="text" placeholder="PESQUISAR NO GOOGLE" onclick="this.value=''">
-                                </label>
-                            </form>
-                            <form action="https://translate.google.com" onsubmit="traduzir(this.texto1.value,this.texto2.value)" method="get" target="_blank" id="tradutor">
-                                <label>
-                                    <textarea name="texto1" onkeyup="verEnter(this.value,'')" placeholder="INGLÊS >>> PORTUGUÊS" onclick="this.value=''"></textarea>
-                                </label>
-                                <label>
-                                    <textarea name="texto2" onkeyup="verEnter('',this.value)" placeholder="PORTUGUÊS >>> INGLÊS" onclick="this.value=''"></textarea>
-                                </label>
-                                <input type="hidden" name="teste" id="teste" value="">
-                                <input type="hidden" name="op" value="translate">
-                                <input type="hidden" name="sl" id="sl" value="">
-                                <input type="hidden" name="tl" id="tl" value="">
-                                <input type="hidden" name="text" id="text" value="">
-                            </form>
+                        <td id="searchtranslator">
+                            <p><span id="search"></span></p>
+                            <p><span id="translator"></span></p>
                         </td>
                     </tr>
                 </table>
-                <p id="ass">By Thiago Airold Perez</p>
                 <hr>
+                    <div id="ass"> </div>
             </div>
             <div id="conteudo">
                 <p><br>PROFISSIONAL</p>
@@ -62,11 +40,4 @@
         </div>
     </body>
 </html>
-<script>
-    relogio();
-    data();
-    lista("profissional");
-    lista("interno");
-    lista("pessoal");
-    lista("estudo");
-</script>
+<script>exe();</script>

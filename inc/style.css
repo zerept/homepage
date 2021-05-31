@@ -7,7 +7,7 @@ body {
 }
 #pagina{
     position: relative;
-    width: 70%;
+    width: 75%;
     left: -30px;
     margin: 0 auto;
 }
@@ -18,11 +18,23 @@ p {
     font-size: 14px;
 }
 #ass {
+    position: relative;
+    left: -5px;
+    top:-19px;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1d1d1d;
+    font-size: 9px;
+    text-align: right;
+}
+#bot {
+    position: relative;
+    width: 100%;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
     color: #1d1d1d;
-    font-size: 10px;
-    text-align: right;
+    font-size: 12px;
+    text-align: left;
 }
 table {
     border-collapse: collapse;
@@ -51,17 +63,22 @@ a:hover {text-decoration: darkblue;
 }
 input, textarea {
     width: 80%;
-    height: 40px;
+    height: 30px;
     border: 2px solid;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin: 0.25rem;
-    min-width: 300px;
-    padding: 0.5rem;
-    transition: background-color 0.5s ease-out;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 0px;
+    min-width: 200px;
+    padding: 5px;
     text-align: center;
     text-valign: center;
     background-color: #e0dcdc;
+}
+#datahora{
+    width: 30%;
+}
+#searchtranslator{
+    width: 70%;
 }
 #cor_profissional{
     width: 100%;
@@ -109,28 +126,24 @@ input, textarea {
 }
 #topo{
     position: fixed;
-    width: 70%;
+    top:0px;
+    box-shadow: 0 0 1em #ffffff;
+    width: 75%;
     margin: 0 auto;
     background-color: #e0dcdc;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 0 20px;
     border: 5px solid #1d1d1d;
     border-radius: 30px;
     color: #1d1d1d;
     z-index: 3;
 }
-#topo_preto{
-    position: fixed;
-    top: -20px;
-    height: 80px;
-    width: 100%;
-    background-color: #1d1d1d;
-    z-index: 2;
-}
+
 #conteudo{
+    box-shadow: 0 0 1em #ffffff;
     position: absolute;
-    width: 100%;
-    top: 340px;
-    margin: 0 auto;
+    width: 90%;
+    top: 265px;
+    margin-left: 5%;
     background-color: #e0dcdc;
     padding: 0 30px 20px 20px;
     border: 5px solid #1d1d1d;

@@ -67,9 +67,14 @@ function lista(valor){
             }
         }
     };
-    xmlhttp.open("GET", "links.json", true);
+    xmlhttp.open("GET", "inc/links.json", true);
     xmlhttp.send();
 }
+function ass(){
+    let author = "By Thiago Airold Perez";
+    return document.getElementById('ass').textContent = author;
+}
+
 function traduzir(val1,val2){
     if (val1!==""){
         document.getElementById("text").value = val1;
@@ -83,7 +88,8 @@ function traduzir(val1,val2){
     }
 }
 function verEnter(val1,val2){
-    if ( /[\n|\n\r]/.test(val1) || /[\n|\n\r]/.test(val2) ){
+    let vEnt=/[\n|\r]/;
+    if ( vEnt.test(val1) || vEnt.test(val2) ){
         traduzir(val1,val2);
         document.getElementById("tradutor").submit();
     }
@@ -91,13 +97,10 @@ function verEnter(val1,val2){
 function relogio(){
     setInterval(function(){
         let novaHora = new Date();
-        let hora = novaHora.getHours();
-        let minuto = novaHora.getMinutes();
-        let segundo = novaHora.getSeconds();
-        hora = zero(hora);
-        minuto = zero(minuto);
-        segundo = zero(segundo);
-        document.getElementById('rel').textContent = hora+':'+minuto+':'+segundo;
+        let hora = zero(novaHora.getHours());
+        let minuto = zero(novaHora.getMinutes());
+        let segundo = zero(novaHora.getSeconds());
+        return document.getElementById('rel').textContent = hora+':'+minuto+':'+segundo;
     },1000)
 }
 function zero(x) {
@@ -105,11 +108,33 @@ function zero(x) {
         x = '0' + x;
     } return x;
 }
-
 function data(){
     let dayName = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"]
     let monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro"]
     let agora = new Date
     let varData = dayName[agora.getDay() ] + ", " + agora.getDate () + " de " + monName [agora.getMonth() ]   +  " de "  +     agora.getFullYear ();
-    document.getElementById('dat').textContent = varData;
+    return document.getElementById('dat').textContent = varData;
+}
+function head() {
+    let v = "";
+    v += "" +
+        "<link rel='stylesheet' type='text/css' href='inc/style.css' />"+
+        "<link rel='icon' href='inc/favicon.ico' type='image/x-icon'/>"+
+        "<link rel='shortcut icon' href='inc/favicon.ico' type='image/x-icon'/>"
+    return document.getElementById('head').innerHTML = v;
+}
+function busca() {
+    let v = "";
+    v += "<form action='https://www.google.com/search' method='get' target='_blank'>" +
+        "<label><input name='q' type='text' placeholder='PESQUISAR NO GOOGLE' onClick=this.value=''>"+
+        "</label></form>"
+    return document.getElementById('search').innerHTML = v;
+}
+function tradutor() {
+    let v = "";
+    v += "<form action='https://translate.google.com' onsubmit='traduzir(this.texto1.value,this.texto2.value)' method='get' target='_blank' id='tradutor'>" +
+        "<label><textarea name='texto1' onkeyup=verEnter(this.value,'') placeholder='INGLÊS >>> PORTUGUÊS' onclick=this.value=''></textarea></label>"+
+        "<label><textarea name='texto2' onkeyup=verEnter('',this.value) placeholder='PORTUGUÊS >>> INGLÊS' onclick=this.value=''></textarea></label>"+
+        "<input type='hidden' name='teste' id='teste' value=''><input type='hidden' name='op' value='translate'><input type='hidden' name='sl' id='sl' value=''><input type='hidden' name='tl' id='tl' value=''><input type='hidden' name='text' id='text' value=''></form>"
+    return document.getElementById('translator').innerHTML = v;
 }
