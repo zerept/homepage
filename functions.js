@@ -93,23 +93,23 @@ function verEnter(val1,val2){
     }
 }
 function relogio(){
-    var data=new Date();
-    var hor=data.getHours();
-    var min=data.getMinutes();
-    var seg=data.getSeconds();
-    
-    if(hor < 10){
-        hor="0"+hor;
-    }
-    if(min < 10){
-        min="0"+min;
-    }
-    if(seg < 10){
-        seg="0"+seg;
-    }
-    
-    var horas=hor + ":" + min + ":" + seg;
-    
-    document.getElementById("rel").innerHTML=horas;
-    setInterval(relogio,1000);
+    setInterval(function(){
+        let novaHora = new Date();
+        let hora = novaHora.getHours();
+        let minuto = novaHora.getMinutes();
+        let segundo = novaHora.getSeconds();
+        minuto = zero(minuto);
+        segundo = zero(segundo);
+        document.getElementById('rel').textContent = hora+':'+minuto+':'+segundo;
+    },1000)
+}
+function zero(x) {
+    if (x < 10) {
+        x = '0' + x;
+    } return x;
+}
+
+function data(){
+    let varData = dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear ();
+    document.getElementById('dat').textContent = varData;
 }

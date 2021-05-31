@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<html lang="pt-br">
     <head>
         <title>Home Page</title>
         <meta charset="utf-8" />
-        <script>var userip;</script>
-        <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
         <script type="text/javascript" src="functions.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -22,10 +20,7 @@
                                 <span id="rel"></span>
                             </p>
                             <p>
-                                <script type="text/javascript">
-                                    document.write ("<p> " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
-                                    document.write("<p>Meu IP Externo: ", userip,);
-                                </script>
+                                <span id="dat"></span>
                             </p>
                         </td>
                         <td>
@@ -69,6 +64,7 @@
 </html>
 <script>
     relogio();
+    data();
     lista("profissional");
     lista("interno");
     lista("pessoal");
