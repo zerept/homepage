@@ -92,4 +92,24 @@ function verEnter(val1,val2){
         document.getElementById("tradutor").submit();
     }
 }
-
+function relogio(){
+    var data=new Date();
+    var hor=data.getHours();
+    var min=data.getMinutes();
+    var seg=data.getSeconds();
+    
+    if(hor < 10){
+        hor="0"+hor;
+    }
+    if(min < 10){
+        min="0"+min;
+    }
+    if(seg < 10){
+        seg="0"+seg;
+    }
+    
+    var horas=hor + ":" + min + ":" + seg;
+    
+    document.getElementById("rel").innerHTML=horas;
+    setInterval(relogio,1000);
+}
