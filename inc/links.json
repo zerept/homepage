@@ -1,0 +1,30 @@
+{
+  "estudo": [
+    {"tit": "Profissionais TI", "ico": "https://www.profissionaisti.com.br/favicon.ico", "lnk": "https://www.profissionaisti.com.br/"},
+    {"tit": "Stack Overflow", "ico": "https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/stackoverflow-512.png", "lnk": "https://stackoverflow.com/"},
+    {"tit": "Medium", "ico": "https://cdn.iconscout.com/icon/free/png-512/medium-47-433328.png", "lnk": "https://medium.com/"},
+    {"tit": "Udemy", "ico": "https://www.udemy.com/staticx/udemy/images/v6/favicon-196x196.png", "lnk": "https://www.udemy.com/"}
+  ],
+  "interno": [
+    {"tit": "Portainer", "ico": "https://avatars.githubusercontent.com/u/22225832?s=280&v=4", "lnk": "http://localhost:9000/"},
+    {"tit": "Cockpit", "ico": "https://avatars.githubusercontent.com/u/5765104?s=280&v=4", "lnk": "http://localhost:9090/"}
+  ],
+  "pessoal": [
+    {"tit": "Hotmail", "ico": "https://ow2.res.office365.com/owalanding/2021.4.9.04/images/favicon.ico?v=4", "lnk": "https://hotmail.com"},
+    {"tit": "Gmail", "ico": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico", "lnk": "https://gmail.com"},
+    {"tit": "NO IP", "ico": "https://avatars.githubusercontent.com/u/16158562?v=4", "lnk": "https://www.noip.com/"},
+    {"tit": "Git Hub", "ico": "https://github.githubassets.com/favicons/favicon.svg", "lnk": "https://github.com/zerept"},
+    {"tit": "Youtube", "ico": "https://www.youtube.com/favicon.ico", "lnk": "https://youtube.com"},
+    {"tit": "Drive", "ico": "https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png", "lnk": "https://drive.google.com/"},
+    {"tit": "Maps", "ico": "https://cdn.autopapo.com.br/box/uploads/2019/02/04111454/2000px-googlemaps_logo.svg.png", "lnk": "https://www.google.com.br/maps"},
+    {"tit": "Facebook", "ico": "https://cdn.icon-icons.com/icons2/478/PNG/128/facebook_47004.png", "lnk": "https://www.facebook.com/"},
+    {"tit": "Twitter", "ico": "https://abs.twimg.com/favicons/twitter.ico", "lnk": "https://twitter.com/"},
+    {"tit": "Instagram", "ico": "https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png", "lnk": "https://www.instagram.com/"},
+    {"tit": "Linkedin", "ico": "https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico", "lnk": "https://br.linkedin.com/"},
+    {"tit": "Whatsapp Web", "ico": "https://www.jungnapratica.com.br/wp-content/uploads/2019/05/icon-whatsApp.png", "lnk": "https://web.whatsapp.com/"}
+  ],
+  "profissional": [
+    {"tit": "AWS CONSOLE", "ico": "https://img.icons8.com/color/452/amazon-web-services.png", "lnk": "https://sa-east-1.console.aws.amazon.com/console/home?region=sa-east-1"},
+    {"tit": "Docker Hub", "ico": "https://cdn.iconscout.com/icon/free/png-256/docker-226091.png", "lnk": "https://hub.docker.com/"}
+  ]
+}
