@@ -113,15 +113,7 @@ function data(){
     let monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro"]
     let agora = new Date
     let varData = dayName[agora.getDay() ] + ", " + agora.getDate () + " de " + monName [agora.getMonth() ]   +  " de "  +     agora.getFullYear ();
-    return document.getElementById('dat').textContent = varData;
-}
-function head() {
-    let v = "";
-    v += "" +
-        "<link rel='stylesheet' type='text/css' href='inc/style.css' />"+
-        "<link rel='icon' href='inc/favicon.ico' type='image/x-icon'/>"+
-        "<link rel='shortcut icon' href='inc/favicon.ico' type='image/x-icon'/>"
-    return document.getElementById('head').innerHTML = v;
+    return document.getElementById('dat').textContent = varData.toUpperCase();
 }
 function busca() {
     let v = "";
