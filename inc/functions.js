@@ -24,27 +24,27 @@ function lista(valor){
                 if (valor === "pessoal") {
                     texto += "<td>" +
                         "<a href='" + myArr.pessoal[i].lnk + "' target='_blank'><div id='cor_pessoal'>" +
-                        "<br><img width='60px' height='60px' src='" + myArr.pessoal[i].ico + "' alt=''>" +
+                        "<br><img width='50px' height='50px' src='" + myArr.pessoal[i].ico + "' alt=''>" +
                         "<div id='tit_pessoal'>" + myArr.pessoal[i].tit.toUpperCase() +
                     "</div></div></a></td>"
                 } else if (valor === "profissional") {
                     texto += "<td>" +
                         "<a href='" + myArr.profissional[i].lnk + "' target='_blank'><div id='cor_profissional'>" +
-                        "<br><img width='60px' height='60px' src='" + myArr.profissional[i].ico + "' alt=''>" +
+                        "<br><img width='50px' height='50px' src='" + myArr.profissional[i].ico + "' alt=''>" +
                         "<div id='tit_profissional'>" + myArr.profissional[i].tit.toUpperCase() +
                     "</div></div></a></td>"
                 }
                 else if (valor === "interno"){
                     texto += "<td>" +
                         "<a href='" + myArr.interno[i].lnk + "' target='_blank'><div id='cor_interno'>" +
-                        "<br><img width='60px' height='60px' src='" + myArr.interno[i].ico + "' alt=''>" +
+                        "<br><img width='50px' height='50px' src='" + myArr.interno[i].ico + "' alt=''>" +
                         "<div id='tit_interno'>" + myArr.interno[i].tit.toUpperCase() +
                         "</div></div></a></td>"
                 }
             else {
                     texto += "<td>" +
                         "<a href='" + myArr.estudo[i].lnk + "' target='_blank'><div id='cor_estudo'>" +
-                        "<br><img width='60px' height='60px' src='" + myArr.estudo[i].ico + "' alt=''>" +
+                        "<br><img width='50px' height='50px' src='" + myArr.estudo[i].ico + "' alt=''>" +
                         "<div id='tit_estudo'>" + myArr.estudo[i].tit.toUpperCase() +
                         "</div></div></a></td>"
                 }
@@ -126,15 +126,15 @@ function head() {
 function busca() {
     let v = "";
     v += "<form action='https://www.google.com/search' method='get' target='_blank'>" +
-        "<label><input name='q' type='text' placeholder='PESQUISAR NO GOOGLE' onClick=this.value=''>"+
+        "<label><input name='q' type='text' placeholder='PESQUISAR  NO  GOOGLE' onClick=this.value=''>"+
         "</label></form>"
     return document.getElementById('search').innerHTML = v;
 }
 function tradutor() {
     let v = "";
     v += "<form action='https://translate.google.com' onsubmit='traduzir(this.texto1.value,this.texto2.value)' method='get' target='_blank' id='tradutor'>" +
-        "<label><textarea name='texto1' onkeyup=verEnter(this.value,'') placeholder='INGLÊS >>> PORTUGUÊS' onclick=this.value=''></textarea></label>"+
-        "<label><textarea name='texto2' onkeyup=verEnter('',this.value) placeholder='PORTUGUÊS >>> INGLÊS' onclick=this.value=''></textarea></label>"+
+        "<label><textarea name='texto1' onkeyup=verEnter(this.value,'') placeholder='INGLÊS >>>> PORTUGUÊS' onclick=this.value=''></textarea><br> </label>"+
+        "<label><textarea name='texto2' onkeyup=verEnter('',this.value) placeholder='PORTUGUÊS >>>> INGLÊS' onclick=this.value=''></textarea></label>"+
         "<input type='hidden' name='teste' id='teste' value=''><input type='hidden' name='op' value='translate'><input type='hidden' name='sl' id='sl' value=''><input type='hidden' name='tl' id='tl' value=''><input type='hidden' name='text' id='text' value=''></form>"
     return document.getElementById('translator').innerHTML = v;
 }

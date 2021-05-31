@@ -1,45 +1,46 @@
+::-webkit-input-placeholder { /* Edge */
+    color: #e0dcdc;
+    font-weight:bold;
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #e0dcdc;
+    font-weight:bold;
+}
+
+::placeholder {
+    color: #e0dcdc;
+    font-weight:bold;
+}
 html {
   background-color: #1d1d1d;
 }
 body {
-
-}
-#pagina{
-    position: relative;
-    width: 75%;
-    left: -30px;
-    margin: 0 auto;
-}
-p {
     font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
     color: #1d1d1d;
     font-size: 14px;
 }
+#pagina{
+    position: relative;
+    width: 92%;
+    left: -32px;
+    margin: 0 auto;
+}
+p {
+    font-weight:bold;
+}
 #ass {
     position: relative;
+    font-smooth: auto;
     left: -5px;
-    top:-19px;
+    top:-5px;
     width: 100%;
-    font-family:Arial, Helvetica, sans-serif;
     color: #1d1d1d;
     font-size: 9px;
     text-align: right;
 }
-#bot {
-    position: relative;
-    width: 100%;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    color: #1d1d1d;
-    font-size: 12px;
-    text-align: left;
-}
 table {
     border-collapse: collapse;
-}
-table{
     width: 100%;
 }
 th, td {
@@ -65,20 +66,25 @@ input, textarea {
     width: 80%;
     height: 30px;
     border: 2px solid;
-    border-radius: 6px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
     font-size: 14px;
     margin: 0px;
     min-width: 200px;
     padding: 5px;
     text-align: center;
     text-valign: center;
-    background-color: #e0dcdc;
+    background-color: gray;
+    color: #1d1d1d;
 }
 #datahora{
-    width: 30%;
+    width: 20%;
+    background-color: #e0dcdc;
 }
 #searchtranslator{
-    width: 70%;
+    width: 80%;
+    background-color: #e0dcdc;
 }
 #cor_profissional{
     width: 100%;
@@ -126,11 +132,11 @@ input, textarea {
 }
 #topo{
     position: fixed;
-    top:0px;
+    top:-26px;
     box-shadow: 0 0 1em #ffffff;
-    width: 75%;
+    width: 92%;
     margin: 0 auto;
-    background-color: #e0dcdc;
+    background-color: gray;
     padding: 0 20px 0 20px;
     border: 5px solid #1d1d1d;
     border-radius: 30px;
@@ -141,18 +147,16 @@ input, textarea {
 #conteudo{
     box-shadow: 0 0 1em #ffffff;
     position: absolute;
-    width: 90%;
-    top: 265px;
-    margin-left: 5%;
+    width: 100%;
+    top: 190px;
     background-color: #e0dcdc;
-    padding: 0 30px 20px 20px;
+    padding: 0 30px 20px 25px;
     border: 5px solid #1d1d1d;
     border-radius: 30px;
     color: #1d1d1d;
     z-index: 1;
 }
 #rel{
-    font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
     color: #1d1d1d;
     font-size: 40px;
